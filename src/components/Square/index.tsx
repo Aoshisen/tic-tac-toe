@@ -4,7 +4,7 @@ import styles from "./index.module.scss";
 
 interface SquareParamsType {
   ClickEven: MouseEventHandler<HTMLButtonElement>;
-  squareState: string;
+  squareState: "X" | "O" | null;
 }
 
 const Square = (params: SquareParamsType) => {

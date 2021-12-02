@@ -7,7 +7,7 @@ const App = () => {
   //需要明确的一点，在最外层的地方 需要有borderState 和点击函数 并且点击函数需要调用caculateWinner函数
 
   // 创建长度为9 所有值都为空的数组来保存棋盘的状态
-  const [boardState, setBoardState] = useState(Array(9).fill(null));
+  // const [boardState, setBoardState] = useState(Array(9).fill(null));
 
   //实现时间旅行,初始化一个初始状态是一个 长度为1的一个数组，唯一的一个值是存储的是board的初始状态数据，也就是一个长度为9，所有值为null 的一个数组
   const [gameData, setGameData] = useState([Array(9).fill(null)]);
@@ -17,7 +17,7 @@ const App = () => {
 
   const [stepNumber, setStepNumber] = useState(0);
 
-  const currentRenderData = gameData[stepNumber];
+  const current=gameData[stepNumber]
 
   //传入一个数组,并根据数组的数值返回赢家
   const caculateWinner = (boardState: Array<"O" | "X" | null>) => {
@@ -49,43 +49,44 @@ const App = () => {
 
     return null;
   };
-
+  
   //每一个格子点击的函数
   const handleClick = (i: number) => {
-    //如果已经有赢家了，或者当前位置已经填充了东西那么直接返回
 
-    if (caculateWinner(boardState) || boardState[i - 1]) {
+    const _gameData=gameData.slice(0,stepNumber+1)
+
+    const _current= _gameData[_gameData.length-1]
+
+    const _boardState=current.slice()
+
+    //如果已经有赢家了，或者当前位置已经填充了东西那么直接返回
+    if (caculateWinner(_current) || _current[i - 1]) {
       return;
     }
 
-    let fillIcon = xIsnext ? "X" : "O";
-
-    boardState[i - 1] = fillIcon;
-
-    let _gameData = gameData.slice(0, stepNumber + 1);
-
-    //这里如果不使用...运算符的话组件就不会自动的判断组件更新
-    setBoardState([...boardState]);
-
+    _boardState[i-1]=xIsnext?"X":"O"
+    
     //每一次点击盒子都会生成一个状态，我们把这个状态存储到gameData中
-    setGameData([..._gameData, boardState]);
-
-    setStepNumber(gameData.length);
-
+    setGameData([..._gameData,_boardState]);
+    
+    setStepNumber(_gameData.length);
+    
     setNextX(!xIsnext);
   };
+  
+  
+  
 
   const jumpTo = (step: number) => {
     setStepNumber(step);
     setNextX(step % 2 === 0);
   };
 
-  console.log(gameData, "this is gameData<<<<<<<<<<<");
 
   return (
     <>
       <div className={style.app}>this is app</div>
-      <Board handleClick={handleClick} boardState={currentRenderData} />
+      <Board handleClick={handleClick} boardState={current} />
       {/** ol 自带一个数字的前缀 */}
       <ol>
         {gameData.map((_, move) => {

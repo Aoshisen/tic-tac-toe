@@ -52,30 +52,25 @@ const App = () => {
   
   //每一个格子点击的函数
   const handleClick = (i: number) => {
-
     const _gameData=gameData.slice(0,stepNumber+1)
-
     const _current= _gameData[_gameData.length-1]
-
     const _boardState=current.slice()
+    
+    _boardState[i-1]=xIsnext?"X":"O"
 
     //如果已经有赢家了，或者当前位置已经填充了东西那么直接返回
     if (caculateWinner(_current) || _current[i - 1]) {
       return;
     }
-
-    _boardState[i-1]=xIsnext?"X":"O"
     
     //每一次点击盒子都会生成一个状态，我们把这个状态存储到gameData中
     setGameData([..._gameData,_boardState]);
     
+    //设置当前的step为历史记录的长度那么多
     setStepNumber(_gameData.length);
     
     setNextX(!xIsnext);
   };
-  
-  
-  
 
   const jumpTo = (step: number) => {
     setStepNumber(step);

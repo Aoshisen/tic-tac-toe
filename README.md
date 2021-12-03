@@ -61,5 +61,30 @@ To learn React, check out the [React documentation](https://reactjs.org/).
     # 安装typescript-plugin-css-modules 这个包,当然你也需要安装node-sass 来添加对sass的支持
     yarn add -D typescript-plugin-css-modules 
 ```
+## 还是关于构建
 
+- 这个项目我升级了yarn到最新的yarn 3 这会导致一个错误
+```js
+Failed to load config “react-app“ to extend from.
 
+```
+我们根据报错信息知道这是eslint 检测报的错误，然后我们上网搜索
+
+```bash
+    #安装 eslint-config-react-app 这个包,然后报错信息就会消失
+    yarn add eslint-config-react-app -D
+```
+
+- 另外值得注意的一点是由于.gitlog 里面没有设置忽略最新yarn生成的.yarn 目录以及.php.cjs .php.loader.mjs所以git里面就会有很多modify
+
+```bash
+ vim .gitignore
+---------------填入以下内容https://www.yarnpkg.cn/getting-started/qa------------------
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+```

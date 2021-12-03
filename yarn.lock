@@ -408,7 +408,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-class-properties@npm:7.12.1, @babel/plugin-proposal-class-properties@npm:^7.12.1":
+"@babel/plugin-proposal-class-properties@npm:7.12.1":
   version: 7.12.1
   resolution: "@babel/plugin-proposal-class-properties@npm:7.12.1"
   dependencies:
@@ -420,7 +420,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-class-properties@npm:^7.16.0":
+"@babel/plugin-proposal-class-properties@npm:^7.12.1, @babel/plugin-proposal-class-properties@npm:^7.16.0":
   version: 7.16.0
   resolution: "@babel/plugin-proposal-class-properties@npm:7.16.0"
   dependencies:
@@ -506,7 +506,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-nullish-coalescing-operator@npm:7.12.1, @babel/plugin-proposal-nullish-coalescing-operator@npm:^7.12.1":
+"@babel/plugin-proposal-nullish-coalescing-operator@npm:7.12.1":
   version: 7.12.1
   resolution: "@babel/plugin-proposal-nullish-coalescing-operator@npm:7.12.1"
   dependencies:
@@ -518,7 +518,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-nullish-coalescing-operator@npm:^7.16.0":
+"@babel/plugin-proposal-nullish-coalescing-operator@npm:^7.12.1, @babel/plugin-proposal-nullish-coalescing-operator@npm:^7.16.0":
   version: 7.16.0
   resolution: "@babel/plugin-proposal-nullish-coalescing-operator@npm:7.16.0"
   dependencies:
@@ -530,7 +530,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-numeric-separator@npm:7.12.1, @babel/plugin-proposal-numeric-separator@npm:^7.12.1":
+"@babel/plugin-proposal-numeric-separator@npm:7.12.1":
   version: 7.12.1
   resolution: "@babel/plugin-proposal-numeric-separator@npm:7.12.1"
   dependencies:
@@ -542,7 +542,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-numeric-separator@npm:^7.16.0":
+"@babel/plugin-proposal-numeric-separator@npm:^7.12.1, @babel/plugin-proposal-numeric-separator@npm:^7.16.0":
   version: 7.16.0
   resolution: "@babel/plugin-proposal-numeric-separator@npm:7.16.0"
   dependencies:
@@ -581,7 +581,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-optional-chaining@npm:7.12.1, @babel/plugin-proposal-optional-chaining@npm:^7.12.1":
+"@babel/plugin-proposal-optional-chaining@npm:7.12.1":
   version: 7.12.1
   resolution: "@babel/plugin-proposal-optional-chaining@npm:7.12.1"
   dependencies:
@@ -594,7 +594,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-proposal-optional-chaining@npm:^7.16.0":
+"@babel/plugin-proposal-optional-chaining@npm:^7.12.1, @babel/plugin-proposal-optional-chaining@npm:^7.16.0":
   version: 7.16.0
   resolution: "@babel/plugin-proposal-optional-chaining@npm:7.16.0"
   dependencies:
@@ -1163,7 +1163,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-react-display-name@npm:7.12.1, @babel/plugin-transform-react-display-name@npm:^7.12.1":
+"@babel/plugin-transform-react-display-name@npm:7.12.1":
   version: 7.12.1
   resolution: "@babel/plugin-transform-react-display-name@npm:7.12.1"
   dependencies:
@@ -1174,7 +1174,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-react-display-name@npm:^7.16.0":
+"@babel/plugin-transform-react-display-name@npm:^7.12.1, @babel/plugin-transform-react-display-name@npm:^7.16.0":
   version: 7.16.0
   resolution: "@babel/plugin-transform-react-display-name@npm:7.16.0"
   dependencies:
@@ -1991,6 +1991,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@jest/types@npm:^27.4.2":
+  version: 27.4.2
+  resolution: "@jest/types@npm:27.4.2"
+  dependencies:
+    "@types/istanbul-lib-coverage": ^2.0.0
+    "@types/istanbul-reports": ^3.0.0
+    "@types/node": "*"
+    "@types/yargs": ^16.0.0
+    chalk: ^4.0.0
+  checksum: 1191022023e32763063cc1c8b1143fa316fb05db2f9698280a7bdbafcabd989e5fd64f8eb875b8a2e54c53f25dba45ed2eea8ced394d9e484da0fda674cd17a5
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -2460,7 +2473,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:*, @types/jest@npm:^26.0.15":
+"@types/jest@npm:*":
+  version: 27.0.3
+  resolution: "@types/jest@npm:27.0.3"
+  dependencies:
+    jest-diff: ^27.0.0
+    pretty-format: ^27.0.0
+  checksum: 3683a9945821966f6dccddf337219a5d682633687c9d30df859223db553589f63e9b2c34e69f0cc845c86ffcf115742f25c12ea03c8d33d2244890fdc0af61e2
+  languageName: node
+  linkType: hard
+
+"@types/jest@npm:^26.0.15":
   version: 26.0.24
   resolution: "@types/jest@npm:26.0.24"
   dependencies:
@@ -2498,7 +2521,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^12.0.0":
+"@types/node@npm:*":
+  version: 16.11.11
+  resolution: "@types/node@npm:16.11.11"
+  checksum: 1c472bd63f23ca0e4effc96e6e0c693b83b027f613a1f41b6d1bd7791f65ce171a351e0a5c92575cb59e84ad0a930875397bfbbb91a7c925ddbbb558f7461af8
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^12.0.0":
   version: 12.20.37
   resolution: "@types/node@npm:12.20.37"
   checksum: 8c8b12f802678b3b87c5344b6c84082be08561dda81dc161d42be8cd327330d1a5227cef039c45a5e63a6d4a01ef5ef215dccc42d06100f59f6a8814b4f91cdd
@@ -2549,7 +2579,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^17.0.0":
+"@types/react@npm:*, @types/react@npm:^17.0.37":
   version: 17.0.37
   resolution: "@types/react@npm:17.0.37"
   dependencies:
@@ -2653,6 +2683,15 @@ __metadata:
   dependencies:
     "@types/yargs-parser": "*"
   checksum: 8e358aeb8f0c3758e59e2b8fcfdee5627ab2fe3d92f50f380503d966c7f33287be3322155516a50d27727fde1ad3878f48f60cd6648439126d4b0bbb1a1153ed
+  languageName: node
+  linkType: hard
+
+"@types/yargs@npm:^16.0.0":
+  version: 16.0.4
+  resolution: "@types/yargs@npm:16.0.4"
+  dependencies:
+    "@types/yargs-parser": "*"
+  checksum: caa21d2c957592fe2184a8368c8cbe5a82a6c2e2f2893722e489f842dc5963293d2f3120bc06fe3933d60a3a0d1e2eb269649fd6b1947fe1820f8841ba611dd9
   languageName: node
   linkType: hard
 
@@ -3256,6 +3295,13 @@ __metadata:
   dependencies:
     color-convert: ^2.0.1
   checksum: 513b44c3b2105dd14cc42a19271e80f386466c4be574bccf60b627432f9198571ebf4ab1e4c3ba17347658f4ee1711c163d574248c0c1cdc2d5917a0ad582ec4
+  languageName: node
+  linkType: hard
+
+"ansi-styles@npm:^5.0.0":
+  version: 5.2.0
+  resolution: "ansi-styles@npm:5.2.0"
+  checksum: d7f4e97ce0623aea6bc0d90dcd28881ee04cba06c570b97fd3391bd7a268eedfd9d5e2dd4fdcbdd82b8105df5faf6f24aaedc08eaf3da898e702db5948f63469
   languageName: node
   linkType: hard
 
@@ -4398,9 +4444,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30000981, caniuse-lite@npm:^1.0.30001109, caniuse-lite@npm:^1.0.30001125, caniuse-lite@npm:^1.0.30001280":
-  version: 1.0.30001283
-  resolution: "caniuse-lite@npm:1.0.30001283"
-  checksum: a13916f1b5ea0d75fe34d1ac8b8b841f88da69f98b1fd5178fd350291fdc1794daebcaaf57c3d3bc60f33aa27ecdf8e0909dc1a013475754c5416515f9bc32c2
+  version: 1.0.30001284
+  resolution: "caniuse-lite@npm:1.0.30001284"
+  checksum: 67196113186dc38dc579b8d28c660ab45465594d4bb55a4e263779525ed3c3ed208d369775469faf706e9f68ef7071b14e4890c197406d79c8b936f6fabac458
   languageName: node
   linkType: hard
 
@@ -5726,6 +5772,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"diff-sequences@npm:^27.4.0":
+  version: 27.4.0
+  resolution: "diff-sequences@npm:27.4.0"
+  checksum: 66d04033e8632eeacdd029b4ecaf87d233d475e4b0cd1cee035eda99e70e1a7f803507d72f2677990ef526f28a2f6e5709af8d94dcdc0682b8884a3a646190a1
+  languageName: node
+  linkType: hard
+
 "diffie-hellman@npm:^5.0.0":
   version: 5.0.3
   resolution: "diffie-hellman@npm:5.0.3"
@@ -5971,9 +6024,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.3.564, electron-to-chromium@npm:^1.3.896":
-  version: 1.4.9
-  resolution: "electron-to-chromium@npm:1.4.9"
-  checksum: 1ab0400f49f7a3cf13d33cf6432ba54770e8e3a62cad79555b7fdd97115109d9323c7c9802af76ca72bb57d68487c61eacd23c1e7911a121404ef089a3f97149
+  version: 1.4.10
+  resolution: "electron-to-chromium@npm:1.4.10"
+  checksum: 00b9ca97267fc3c865f9888a490e2c1bc2eef80805d8b4337661901d498bf4c771a237f5f7beec294dc847f9096b3a58910da431e4e8cc8dc08871d4630a5860
   languageName: node
   linkType: hard
 
@@ -8996,6 +9049,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jest-diff@npm:^27.0.0":
+  version: 27.4.2
+  resolution: "jest-diff@npm:27.4.2"
+  dependencies:
+    chalk: ^4.0.0
+    diff-sequences: ^27.4.0
+    jest-get-type: ^27.4.0
+    pretty-format: ^27.4.2
+  checksum: e5bcdb4f27747795b74a56d56a9545d7fc8f1671a1251d580aea1a7a52df5db044f62ec24f2abc68305f0226d918a443f3b88d9a82f8d0dc4aaa079b621ab091
+  languageName: node
+  linkType: hard
+
 "jest-docblock@npm:^26.0.0":
   version: 26.0.0
   resolution: "jest-docblock@npm:26.0.0"
@@ -9051,6 +9116,13 @@ __metadata:
   version: 26.3.0
   resolution: "jest-get-type@npm:26.3.0"
   checksum: 1cc6465ae4f5e880be22ba52fd270fa64c21994915f81b41f8f7553a7957dd8e077cc8d03035de9412e2d739f8bad6a032ebb5dab5805692a5fb9e20dd4ea666
+  languageName: node
+  linkType: hard
+
+"jest-get-type@npm:^27.4.0":
+  version: 27.4.0
+  resolution: "jest-get-type@npm:27.4.0"
+  checksum: bb9b70e420009fdaed3026d5bccd01569f92c7500f9f544d862796d4f4efa93ced5484864b2f272c7748bfb5bfd3268d48868b169c51ab45fe5b45b9519b6e46
   languageName: node
   linkType: hard
 
@@ -12567,6 +12639,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"pretty-format@npm:^27.0.0, pretty-format@npm:^27.4.2":
+  version: 27.4.2
+  resolution: "pretty-format@npm:27.4.2"
+  dependencies:
+    "@jest/types": ^27.4.2
+    ansi-regex: ^5.0.1
+    ansi-styles: ^5.0.0
+    react-is: ^17.0.1
+  checksum: 0daaf00c4dcb35493e57d30147e8045d0c45cb47fc4c94e3ab1892401abe939627c39975c77cc81eb2581aaa5b12bf23ef669fa550bec68b396fb79dd8c10afa
+  languageName: node
+  linkType: hard
+
 "process-nextick-args@npm:~2.0.0":
   version: 2.0.1
   resolution: "process-nextick-args@npm:2.0.1"
@@ -13374,7 +13458,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@npm:1.18.1, resolve@npm:^1.10.0, resolve@npm:^1.12.0, resolve@npm:^1.14.2, resolve@npm:^1.17.0, resolve@npm:^1.18.1, resolve@npm:^1.3.2, resolve@npm:^1.8.1":
+"resolve@npm:1.18.1":
   version: 1.18.1
   resolution: "resolve@npm:1.18.1"
   dependencies:
@@ -13384,7 +13468,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@npm:^1.20.0":
+"resolve@npm:^1.10.0, resolve@npm:^1.12.0, resolve@npm:^1.14.2, resolve@npm:^1.17.0, resolve@npm:^1.18.1, resolve@npm:^1.20.0, resolve@npm:^1.3.2, resolve@npm:^1.8.1":
   version: 1.20.0
   resolution: "resolve@npm:1.20.0"
   dependencies:
@@ -13404,7 +13488,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@1.18.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.12.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.17.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.18.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.3.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.8.1#~builtin<compat/resolve>":
+"resolve@patch:resolve@1.18.1#~builtin<compat/resolve>":
   version: 1.18.1
   resolution: "resolve@patch:resolve@npm%3A1.18.1#~builtin<compat/resolve>::version=1.18.1&hash=07638b"
   dependencies:
@@ -13414,7 +13498,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>":
+"resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.12.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.17.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.18.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.3.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.8.1#~builtin<compat/resolve>":
   version: 1.20.0
   resolution: "resolve@patch:resolve@npm%3A1.20.0#~builtin<compat/resolve>::version=1.20.0&hash=07638b"
   dependencies:
@@ -14958,7 +15042,7 @@ __metadata:
     "@testing-library/user-event": ^12.1.10
     "@types/jest": ^26.0.15
     "@types/node": ^12.0.0
-    "@types/react": ^17.0.0
+    "@types/react": ^17.0.37
     "@types/react-dom": ^17.0.0
     eslint-config-react-app: ^6.0.0
     node-sass: ^6.0.1

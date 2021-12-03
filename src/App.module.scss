@@ -4,13 +4,21 @@
   font-weight: bold;
 }
 
-ol {
-  li {
-    cursor: pointer;
-    font-size: 16px;
+.game {
+  width: 300px;
+  margin: 100px auto;
 
-    &:hover {
-      color: red
+  ol {
+    display: inline-block;
+    vertical-align: top;
+
+    li {
+      cursor: pointer;
+      font-size: 16px;
+
+      &:hover {
+        color: red
+      }
     }
   }
 }

@@ -1,9 +1,9 @@
 .board {
-    // text-align: left;
-    margin: 200px auto;
 
-    .row {
-        margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;
+
+    row {
         width: 150px;
     }
 }
